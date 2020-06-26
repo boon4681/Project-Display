@@ -91,9 +91,9 @@ o.add(
                             if(element=="") continue
                             if(r.length-i-1<=3){
                                 if(!(r.length-i-1<1)){
-                                    b.get(document,"#urlpath")[0].innerHTML+= "/"+'<span class="wspan" path="'+link+'">'+element+'</span>'
+                                    b.get(document,"#urlpath")[0].innerHTML+= "<span>/</span>"+'<span class="wspan" path="'+link+'">'+'<span>'+element+'</span>'+'</span>'
                                 }else{
-                                    b.get(document,"#urlpath")[0].innerHTML+= "/"+'<span>'+element+'</span>'
+                                    b.get(document,"#urlpath")[0].innerHTML+= "<span>/</span>"+'<span>'+element+'</span>'
                                 }
                             }
                             if(element==undefined) break
