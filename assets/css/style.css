@@ -310,6 +310,7 @@ header {
     color: #a3a5a7;
 }
 .version-selector{
+    grid-area: top;
     cursor: pointer;
     width: fit-content;
     padding: 10px;
@@ -348,6 +349,7 @@ header {
     color: #3f4346;
 }
 .url-path{
+    grid-area: bottom;
     padding: 7px 45px;
     font-size: 20px;
 }
@@ -446,7 +448,6 @@ header {
 .footer{
     padding: 50px;
     max-width: 1024px;
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
     -webkit-box-align: center;
@@ -459,4 +460,24 @@ header {
 }
 .bottom-200px{
     margin-bottom: 200px;
+}
+@media screen and (max-width:900px) {
+    .bottom-center-inner .inner-center{
+        grid-area: center;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "top"
+        "bottom";
+    }
+    .list {
+        max-width: 400;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:500px) {
+    .list {
+        max-width: 300;
+        grid-template-columns: 1fr;
+    }
 }
