@@ -356,7 +356,7 @@ header {
     display: inline-block!important;
     word-break: break-all!important;
 }
-.url-path .wspan:hover{
+.url-path .wspan>span:hover{
     text-decoration:underline;
 }
 .url-path .a1{
